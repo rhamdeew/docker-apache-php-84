@@ -1,6 +1,6 @@
 FROM php:8.4-apache
 RUN apt-get update && \
-    apt-get -y install libfreetype6 libjpeg62-turbo libpng16-16 libxpm4 wget mariadb-client msmtp gcc && \
+    apt-get -y install libfreetype6 libjpeg62-turbo libpng16-16t64 libxpm4 wget mariadb-client msmtp gcc && \
     apt-get -y install libicu-dev libpng-dev libjpeg-dev libfreetype6-dev libxpm-dev libzip-dev && \
     docker-php-ext-install pdo_mysql && \
     docker-php-ext-install opcache && \
